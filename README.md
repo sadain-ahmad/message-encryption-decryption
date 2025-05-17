@@ -46,8 +46,9 @@ git clone https://github.com/sadain-ahmad/Message-Encryption.git
 cd Message-Encryption
 ```
 3. **Run the script:**
-
+```bash
 python Message-Encryption.py
+```
 
 4. **Follow the prompts to either encrypt or decrypt a message.**
 
