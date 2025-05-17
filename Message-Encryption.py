@@ -26,12 +26,12 @@ if (choice==1):
             r1 = r1 + random.choice(string.ascii_letters)
             r2 = r2 + random.choice(string.ascii_letters)
             
-        # if there are 5 ar more than 5 characters in a word, then we add three random letters in the start and the end, the first two letters would be replaced by the last two letters and the remaining word will be same, and than append it back to the final_message.
+        # if there are 5 or more than 5 characters in a word, then we add three random letters in the start and the end, the first two letters would be replaced by the last two letters and the remaining word will be same, and than append it back to the final_message.
         if (len(token)>=5):
             new_word = r1 + token[-2:] + token[2:-2] + token[0:2] + r2
             final_message += new_word + " "
 
-        # if there are 3 ar more than 3 characters in a word, then we add three random letters in the start and the end, the first letter would be replaced by the last letter and the remaining word will be same, and than append it back to the final_message.
+        # if there are 3 or more but less than 5 characters in a word, then we add three random letters in the start and the end, the first letter would be replaced by the last letter and the remaining word will be same, and than append it back to the final_message.
         elif (len(token)>=3):
             new_word = r1 +token[-1] + token[1:-1] + token[0] + r2
             final_message += new_word + " "
